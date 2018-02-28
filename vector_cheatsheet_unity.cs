@@ -11,7 +11,7 @@ dog.transform.position = new Vector3(20,15,20);
 Vector3 directionToDog = dog.transform.position - cat.transform.position; 
 cat.transform.position += directionToDog;
 
-//scaling vectors
+//scaling vectors: multiplication
 
 Vector3 v1 = new Vector3(5,6,7); 
 Vector3 v2 = v1 * 0.5f;
