@@ -34,15 +34,18 @@ float distanceBetweenCatDog = directionToDog.magnitude;
 
 float distanceBetweenCatDog = Vector3.Distance(cat.transform.position, dog.transform.position);
 
-//Without the use of an angle, Unity can snap a character around to face in a particular direction with LookAt() method
+//Without the use of angle, Unity can snap a character around to face in a particular direction with LookAt() method
+
 cat.transform.LookAt(dog.transform.position);
 
 //apply a Slerp() to see the character turning little by little - not desirable
+
 vector3 direction = dog.transform.position - cat.transform.position;
 cat.transform.rotation = Quaternion.Slerp(cat.transform.rotation,
 Quaternion.LookRotation(direction), Time.deltaTime * rotationSpeed);
 
-//extremely useful angle() for working out how a character should turn and in preparing for AI behaviour. 
+//useful angle() for working out how a character should turn and in preparing for AI behaviour. 
+
 Vector3 direction = dog.transform.position - cat.transform.position; 
 float angleOfRotation = Vector3.Angle(cat.transform.forward, direction);
 
