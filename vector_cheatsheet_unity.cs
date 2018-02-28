@@ -11,7 +11,9 @@ dog.transform.position = new Vector3(20,15,20);
 Vector3 directionToDog = dog.transform.position - cat.transform.position; 
 cat.transform.position += directionToDog;
 
-//scaling vectors: multiplication
+//Scaling vectors: multiplication
+//Opposite Vectors(turning the vector around to point in the opposite direction) by *-1 for calculating characters escape routes.
+//by taking one position away from another, the resulting length of that vector is the distance between the characters.
 
 Vector3 v1 = new Vector3(5,6,7); 
 Vector3 v2 = v1 * 0.5f;
@@ -48,4 +50,5 @@ Quaternion.LookRotation(direction), Time.deltaTime * rotationSpeed);
 
 Vector3 direction = dog.transform.position - cat.transform.position; 
 float angleOfRotation = Vector3.Angle(cat.transform.forward, direction);
+
 
