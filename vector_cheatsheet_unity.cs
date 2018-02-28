@@ -4,8 +4,6 @@ Vector3 v1 = new Vector3(5,6,7);
 Vector3 v2 = new Vector3(1,2,3); 
 Vector3 v3 = v1 + v2;
 
-//adding and subtracting alternative
-
 cat.transform.position = new Vector3(10,15,5); 
 dog.transform.position = new Vector3(20,15,20); 
 Vector3 directionToDog = dog.transform.position - cat.transform.position; 
