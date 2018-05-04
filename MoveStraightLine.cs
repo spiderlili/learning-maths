@@ -11,7 +11,7 @@ public class MoveStraightLine : MonoBehaviour{
   public float speed = 0.1f;
 
   void Start(){
-    //moving aong at 10% of goal each time
+    //moving along at 10% of goal each time
     goal = goal * 0.01f;
   }
   
