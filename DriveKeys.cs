@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Drive : MonoBehaviour {
+public class DriveKeys : MonoBehaviour {
+    
+    //move the goal object around with keys
+    
     public float speed = 10.0F;
     public float rotationSpeed = 100.0F;
     void Update() {
