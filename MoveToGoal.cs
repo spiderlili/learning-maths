@@ -8,7 +8,7 @@ public class MoveStraightLine : MonoBehaviour{
     
   public float speed = 1.0f; 
   public Transform goal; //set a position in the environment
-  public float accurateDistToGoal = 0.2f;
+  public float accurateDistToGoal = 0.2f; //accurate length vector from goal - stops jittering
 
   void Start(){
 
