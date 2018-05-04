@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class MoveStraightLine : MonoBehaviour{
   
-  //humanoid character - no floating in y direction, mobe along from any location
+  //humanoid character - no floating in y direction, move along from any location
   public Vector3 goal = new Vector3(5,0,4); 
   public float speed = 0.1f;
 
