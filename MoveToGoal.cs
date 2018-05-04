@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//moving objects without physics - most basic code for moving character in a straight line with consistent speed
+//moving objects without physics - basic code for moving character in a straight line with consistent speed
+//drive the goal object(player) with arrow keys and get the AI to follow it
 
 public class MoveStraightLine : MonoBehaviour{
     
