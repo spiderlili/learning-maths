@@ -8,7 +8,7 @@ public class MoveStraightLine : MonoBehaviour{
     
   public float speed = 1.0f; 
   public Transform goal; //set a position in the environment
-  public float distanceFromGoal = 0.2f;
+  public float accurateDistToGoal = 0.2f;
 
   void Start(){
 
@@ -26,7 +26,7 @@ public class MoveStraightLine : MonoBehaviour{
     Vector3 direction = goal.position - this.transform.position; 
     
     //if the goal is reached: stop calculation
-    if(direction.magnitude > distanceFromGoal){
+    if(direction.magnitude > accurateDistToGoal){
       this.transform.Translate(goal.normalized * speed * Time.deltaTime);
     }
   }
