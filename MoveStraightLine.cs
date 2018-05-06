@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//moving objects without physics - most basic code for moving character in a straight line with consistent speed
+//moving objects without physics - most basic code for moving character in a straight line with consistent speed 
 
 public class MoveStraightLine : MonoBehaviour{
   
