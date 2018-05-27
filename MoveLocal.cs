@@ -19,6 +19,7 @@ public class MoveLocal : MonoBehaviour {
 		Vector3 lookAtGoal = new Vector3(goal.position.x, this.transform.position.y, goal.position.z);
 		
 		//rotating and orientating the model towards that direction regardless of where in 3d space the goal is positioned 
+		//so the z axis is pointing towards the position of the goal
 		this.transform.LookAt(lookAtGoal);
 		if(Vector3.Distance(transform.position,lookAtGoal) > accuracy)
 			//push the enemy along its z axis
