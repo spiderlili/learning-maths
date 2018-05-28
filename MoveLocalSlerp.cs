@@ -32,8 +32,11 @@ public class MoveLocalSlerp : MonoBehaviour {
 		//LookRotation gives the rotation that needs to occur to be facing in the direction
 		
 		this.transform.rotation = Quarternion.Slerp(this.transform.rotation, Quarternion.LookRotation(direction), rotSpeed*Time.deltaTime);
+		
+		//if using applied root motion: remove the code below - related to pushing the character forward with animation rather than code
 		if(Vector3.Distance(transform.position,lookAtGoal) > accuracy){
 			this.transform.Translate(0,0,speed*Time.deltaTime);
+			
 		}
 	}
 }
