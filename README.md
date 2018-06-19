@@ -7,11 +7,16 @@ Functions,
 Graphs,
 Trees
 
-3D Maths:
+3D Maths & Linear Algebra:
 Matrices,
 Matrices and matrix operations,
 Basic matrix properties,
-Vectors
+Transformations,
+Vectors,
+Quaternions 
+
+Geometry:
+Separating Axis Theorem(collision detection)
 
 Probability:
 Counting,
